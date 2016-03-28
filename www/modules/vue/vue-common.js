@@ -1,8 +1,9 @@
+define('/modules/vue/vue-common', ['require', 'exports', 'module', '/modules/vue/vue', '/modules/vue/vue-app'],function(require, exports, module) {
 /**
  * Created by xpeng on 2015/12/23.
  */
-var Vue = require('vue/vue');
-var vueApp = require('vue/vue-app');
+var Vue = require('/modules/vue/vue');
+var vueApp = require('/modules/vue/vue-app');
 //var share=require('vue/vue-share');
 
 Vue.config.debug = true;//只有开发版本可以使用调试模式。
@@ -112,3 +113,5 @@ module.exports = {
     }
 }
 
+
+});

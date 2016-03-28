@@ -148,10 +148,10 @@ fis.config.merge({
         local : {
             to : '../www',
             exclude: /(?:\/_[^/]+\.\w+)|(?:\.(?:cmd|json))$/i
-        },
-        football : {
-            to : '../../football/platforms/ios/www',
-            exclude: /(?:\/_[^/]+\.\w+)|(?:\.(?:cmd|json))$/i
         }
+        //football : {
+        //    to : '../../football/platforms/ios/www',
+        //    exclude: /(?:\/_[^/]+\.\w+)|(?:\.(?:cmd|json))$/i
+        //}
     }
 });
