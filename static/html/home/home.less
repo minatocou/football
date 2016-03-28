@@ -1,0 +1,41 @@
+@import "../../css/variables";
+@import "../../css/mixin";
+@import "../../css/base";
+
+
+header{
+  background: @base-color;
+  height: 44*@xem;
+  position: fixed;
+  line-height: 44*@xem;
+  color: @w;
+  left: 0;
+  right: 0;
+  text-align: center;
+  h1{
+    font-size: 16*@xem;
+    font-weight: normal;
+  }
+}
+.view{
+  &.header{
+    padding-top: 44*@xem;
+  }
+}
+.home-menu{
+  font-size: 0;
+  > div{
+    padding: 8*@xem;
+    font-size: 14*@xem;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    border-right:1*@xem @border solid;
+    border-bottom: 1*@xem @border solid;
+    text-align: center;
+    i{
+      height: 40*@xem;
+
+    }
+  }
+}
