@@ -1,0 +1,128 @@
+@import "variables";
+@import "mixin";
+@import "base";
+  
+.icon-book{
+    background: url(../images/index/icon-book.png) no-repeat center ;
+    background-size: auto 30*@xem;
+}
+.icon-cp{
+    background: url(../images/index/icon-cp.png) no-repeat center;
+    background-size: auto 30*@xem;
+}
+.icon-more{
+    background: url(../images/index/icon-more.png) no-repeat center;
+    background-size: auto 13*@xem;
+}
+.icon-qc{
+    background: url(../images/index/icon-qc.png) no-repeat center;
+    background-size: auto 30*@xem;
+}
+.icon-qd{
+    background: url(../images/index/icon-qd.png) no-repeat center;
+    background-size: auto 30*@xem;
+}
+.icon-sos{
+    background: url(../images/index/icon-sos.png) no-repeat center;
+    background-size: auto 30*@xem;
+}
+.icon-user{
+    background: url(../images/index/icon-user.png) no-repeat center;
+    background-size: auto 30*@xem;
+}
+
+.icon-menu{
+    background: url(../images/index/icon-menu.png) no-repeat 12*@xem center @w;
+    background-size: 20*@xem auto;
+}
+.icon-fb{
+    background: url(../images/index/icon-fb.png) no-repeat 10*@xem center @w;
+    background-size: 20*@xem auto;
+}
+.icon-f{
+    background: url(../images/index/icon-f.png) no-repeat 10*@xem center @w;
+    background-size: 22*@xem auto;
+}
+.icon-xx{
+    background: url(../images/index/icon-xx.png) no-repeat 10*@xem center @w;
+    background-size: 22*@xem auto;
+} 
+
+.home-text{
+    padding: 8*@xem 10*@xem 8*@xem 40*@xem;
+    border-bottom: 1*@xem #eee solid;
+    position: relative;
+    font-size: 14*@xem;
+    .desc{
+        color: #ccc;
+        display: block;
+    }
+    .time-r{
+        position: absolute;
+        right: 10*@xem;
+        bottom: 10*@xem;
+        font-size: 12*@xem ;
+        color: #ccc;
+    }
+    .text-head{
+        max-height: 30*@xem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .add-f{
+        float: right;
+        color: @w;
+        background: @base-color;
+        padding: 2*@xem 5*@xem;
+        border-radius: 4*@xem;
+        font-size: 12*@xem;
+        margin-top: 6*@xem;
+    }
+}
+
+.home-menu{
+  font-size: 0;
+  background: @w;
+  > div{
+    padding: 8*@xem;
+    font-size: 14*@xem;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    border-right:1*@xem @border solid;
+    border-bottom: 1*@xem @border solid;
+    text-align: center;
+  }
+  [class^=icon-]{
+      display: block;
+      width: 100%;
+      height: 50*@xem;
+      margin-bottom: 5*@xem;
+      
+  }
+}
+.home-title{
+    background: @base-color;
+    text-align: center;
+    color: @w;
+    padding: 5*@xem 0;
+}
+.index-head{
+    border-radius: 50%;
+}
+
+
+.fs12{
+    font-size:12*@xem ;
+}
+.cz{
+    padding: 10*@xem;
+    font-size: 14*@xem;
+    a{
+        color: #666;
+        margin-right: 10*@xem;
+    }
+}
+.fr{
+    float: right;
+}

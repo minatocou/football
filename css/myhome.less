@@ -1,0 +1,118 @@
+@import "variables";
+@import "mixin";
+@import "base";
+.user-info{
+    text-align: center;
+    color: @w;
+    position: relative;
+    background: url(../images/myhome/banner.jpg) no-repeat;
+    background-size: cover;
+    font-size: 14*@xem;
+    padding: 10*@xem;
+    min-height: 150*@xem;
+    .fs16{
+        font-size: 16*@xem;
+    }
+    .fs12{
+        font-size: 12*@xem; 
+    } 
+    .head-img{
+        width: 40*@xem;
+        height: 40*@xem;
+        overflow: hidden;
+        border-radius: 50% ;
+        margin: 0 auto;
+        margin-bottom: 5*@xem;
+        img{
+            width: 100%;
+        }
+    }
+    .info{
+        padding: 5*@xem 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.3);
+    }
+    .team{
+        font-size: 12*@xem;
+        min-height: 30*@xem;
+        line-height: 30*@xem;
+    }
+}
+.myhome-box{
+    
+    >div{
+        min-height: 40*@xem;
+        line-height: 40*@xem;
+        font-size: 14*@xem;
+        border-bottom: 1*@xem #eee solid;
+        padding-left: 10*@xem;
+    }
+    .photos{
+        img{
+            display: inline-block;
+            max-height: 30*@xem;
+            vertical-align: middle;
+            margin-right: 8*@xem;
+        }
+    }
+    label{
+        min-width: 80*@xem;
+        display: inline-block;
+    }
+    .mui-pull-right{
+        margin-top: 8*@xem;
+    }
+}
+.xxs{
+    font-size: 14*@xem;
+    padding: 10*@xem 0 2*@xem 0;
+    .xx{
+        display: inline-block;
+        margin-bottom: 8*@xem;
+        &:nth-of-type(2n){
+            margin-left: 40*@xem;
+        }
+    }
+    margin-top: 10*@xem;
+    .mui-icon{
+        font-size: 16*@xem;
+    }
+    .mui-icon-star-filled{
+        color: @y;
+    }
+    .mui-icon-star{
+        color: #eee;
+    }
+}
+.tags{
+    margin-top: 10*@xem;
+    .t{
+        >div{
+             border-bottom: 1*@xem #eee solid;
+            text-align: center;
+            height: 35*@xem;
+            line-height: 35*@xem;
+            font-size: 14*@xem;
+        }
+        .cur{
+            color: @base-color;
+        }
+    }
+    .tag-box{
+        background: #fefefe;
+        padding: 10*@xem;
+        span{
+            font-size: 12*@xem;
+            color: @w;
+            background: @base-color;
+            padding: 5*@xem 8*@xem;
+            display: inline-block;
+            margin-right: 10*@xem;
+            margin-bottom: 10*@xem;
+        }
+    }
+}
+ 

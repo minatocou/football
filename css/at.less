@@ -1,0 +1,77 @@
+@import "variables";
+@import "mixin";
+@import "base";
+.at-input {
+    .mui-input-row {
+        margin: 15*@xem;
+        background: #eee;
+        border: 1*@xem #ccc solid;
+        border-radius: 4*@xem;
+    }
+    label.b {
+        &:before {
+            content: "*";
+            color: @red;
+            float: left;
+            margin-left: -6*@xem;
+        }
+    }
+    .mui-input-row label~input[type=text] {
+        background: @w;
+    }
+    .p15 {
+        padding: 15*@xem;
+    }
+    .sub-btn {
+        display: block;
+        width: 100%;
+    }
+}
+.at-list {
+    li {
+        margin-top: 40*@xem;
+        background: #cce5c5;
+        padding: 20*@xem 20*@xem 10*@xem;
+        position: relative;
+        
+        .head-box{
+            position: absolute;
+                top: -20*@xem;
+                background: @w;
+                border-radius: 50%;
+                display: inline-block;
+            img{
+                height: 40*@xem;
+                width: 40*@xem;
+                border: 2*@xem @w solid;
+                border-radius: 50%;
+                
+            }
+        }
+        p{
+            margin: 5*@xem 0;
+            color: @title;
+            &.blue{
+                color: @blue;
+            }
+        }
+        .bm-btn{
+            position: absolute;
+            right: 15*@xem;
+            top: 50%;
+            margin-top: -16*@xem;
+        }
+    }
+}
+.add-btn{
+    height: 100%;
+    border-radius: 0;
+    height: 40*@xem;
+    line-height: 40*@xem; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0; 
+    padding: 0;
+}

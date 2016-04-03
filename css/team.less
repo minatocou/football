@@ -1,0 +1,297 @@
+@import "variables";
+@import "mixin";
+@import "base";
+.team-box {
+    .mui-table-view {
+        background: none;
+    }
+    li {
+        background: @w;
+        margin: 10*@xem;
+        border: none;
+        border-radius: 6*@xem;
+    }
+}
+.nolist {
+    margin-top: 30%;
+    p {
+        font-size: 18*@xem;
+        margin: 10*@xem;
+    }
+}
+.team-search {
+    margin: 10*@xem;
+    .mui-search {
+        background: @w;
+        padding: 3*@xem 5*@xem;
+        margin: 0;
+        &:before {
+            color: @green;
+            margin-top: -10px;
+        }
+        .mui-placeholder .mui-icon {
+            color: @green;
+            margin: 10px 0 0 5px;
+        }
+        input[type=search] {
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+}
+.t-qd,
+.t-fj {
+    margin-bottom: 10*@xem;
+    .title {
+        padding: 5*@xem;
+        font-size: 14*@xem;
+    }
+}
+.team-searched {
+    height: 30*@xem;
+    line-height: 30*@xem;
+    padding-left: 10*@xem;
+    margin-bottom: 10*@xem;
+}
+.check-btn {
+    margin: 10*@xem;
+    display: block;
+}
+.add-box {
+    .mui-input-row {
+        border-bottom: 1*@xem #eee solid;
+        &.nb {
+            border-bottom: none;
+        }
+        &.norow {
+            label {
+                float: none;
+                display: inline-block;
+            }
+        }
+    }
+    .upload-images {
+        position: absolute;
+        margin-left: -20*@xem;
+    }
+    .dh {
+        position: relative;
+        margin: 0 auto 30*@xem;
+        width: 60*@xem;
+        font-size: 12*@xem;
+        border: 1*@xem @green solid;
+        color: @green;
+        padding-bottom: 8*@xem;
+        text-align: center;
+        .mui-icon-plusempty {
+            font-size: 35*@xem;
+        }
+        .dh-file {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+.add-btn {
+    display: inline-block;
+    background: @blue;
+    border-radius: 50%;
+    color: @w;
+    vertical-align: middle;
+    margin-left: 20*@xem;
+    .mui-icon-plusempty {
+        font-size: 50*@xem;
+    }
+}
+.del-btn {
+    display: inline-block;
+    background: @red;
+    border-radius: 50%;
+    color: @w;
+    width: 50*@xem;
+    height: 50*@xem;
+    vertical-align: middle;
+    margin-left: 20*@xem;
+    &:before {
+        content: "";
+        width: 30*@xem;
+        display: block;
+        margin-left: 10*@xem;
+        margin-top: 50%;
+        border: 1*@xem @w solid;
+    }
+}
+.td-box {
+    background: @w;
+    padding: 10*@xem;
+    position: relative;
+    border-bottom: 1*@xem #eee solid;
+    font-size: 14*@xem;
+    i {
+        position: absolute;
+        right: 10*@xem;
+        top: 50%;
+        margin-top: -12*@xem;
+    }
+    .fr {
+        float: right;
+        margin-right: 30*@xem;
+        color: #CCCCCC;
+    }
+    &.t {
+        margin-top: 10*@xem;
+    }
+    .dh {
+        margin-top: -10*@xem;
+        img {
+            width: 50*@xem;
+        }
+    }
+    &.big {
+        padding: 30*@xem 10*@xem;
+    }
+}
+.info {
+    background: @w;
+    padding: 5*@xem 10*@xem;
+    margin-top: 10*@xem;
+    font-size: 14*@xem;
+    .title {
+        height: 30*@xem;
+        line-height: 30*@xem;
+        border-bottom: 1*@xem #eee solid;
+    }
+    .content {
+        padding: 5*@xem 0;
+        color: #CCCCCC;
+        min-height: 100*@xem;
+    }
+}
+.team-info {
+    text-align: center;
+    color: @w;
+    position: relative;
+    background: url("../images/myhome/banner.jpg") no-repeat;
+    background-size: cover;
+    font-size: 14*@xem;
+    padding: 10*@xem;
+    min-height: 150*@xem;
+    .fs16 {
+        font-size: 16*@xem;
+    }
+    .fs12 {
+        font-size: 12*@xem;
+    }
+    .head-img {
+        width: 40*@xem;
+        overflow: hidden;
+        margin: 0 auto 5*@xem;
+        img {
+            width: 100%;
+        }
+    }
+    .info {
+        padding: 5*@xem 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.3);
+    }
+    .team {
+        font-size: 12*@xem;
+        min-height: 30*@xem;
+        line-height: 30*@xem;
+    }
+}
+.home-title {
+    text-align: center;
+    height: 30*@xem;
+    line-height: 30*@xem;
+    color: @title;
+    font-size: 14*@xem;
+    padding: 0 10*@xem;
+    .all {
+        font-size: 12*@xem;
+        color: #CCCCCC;
+    }
+}
+.prosons {
+    background: @w;
+    li {
+        display: inline-block;
+        width: 50*@xem;
+        text-align: center;
+        font-size: 12*@xem;
+        padding: 5*@xem;
+        img {
+            width: 35*@xem;
+            height: 35*@xem;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+.team-text {
+    padding: 8*@xem 10*@xem 8*@xem 40*@xem;
+    border-bottom: 1*@xem #eee solid;
+    position: relative;
+    font-size: 14*@xem;
+    .right {
+        float: right;
+        font-size: 12*@xem;
+        color: #CCCCCC;
+    }
+    .tag {
+        float: right;
+        padding: 2*@xem 8*@xem;
+        border-radius: 8*@xem;
+        font-size: 12*@xem;
+        background: @green;
+        color: @w;
+    }
+}
+.home-tags {
+    padding: 8*@xem 10*@xem;
+    background: @w;
+    span {
+        font-size: 12*@xem;
+        background: @green;
+        color: @w;
+        padding: 2*@xem 5*@xem;
+        margin-right: 10*@xem;
+    }
+    .fr {
+        float: right;
+    }
+}
+.team-a {
+    padding: 10*@xem 0;
+    img {
+        width: 70*@xem;
+        display: block;
+    }
+}
+.gg {
+    font-size: 12*@xem;
+    color: #CCCCCC;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10*@xem;
+    background: #eee;
+     display: -webkit-flex; /* Safari */
+    display: flex;
+    input{
+        margin: 0;
+        margin-right: 5*@xem;
+    }
+}

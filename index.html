@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
+	</head>
+
+	<body >
+		<div>
+			<header class="mui-bar mui-bar-nav">
+				<h1 class="mui-title">坝坝足球</h1>
+				<a class="head-msg"><img src="images/index/icon-msg.png" width="18px" alt="" /></a>
+			</header>
+			<div class="mui-content bar-b">
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#"><img src="images/index/banner.png" /></a>
+						</div>
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#"><img src="images/index/banner.png" /></a>
+						</div>
+					</div>
+				</div>
+				<nav class="home-menu">
+					<div>
+						<i class="icon-cp"></i>裁判
+					</div>
+					<div>
+						<i class="icon-qd"></i>领队约球
+					</div>
+					<div>
+						<i class="icon-user"></i>约散人
+					</div>
+					<div>
+						<i class="icon-sos"></i>江湖救急
+					</div>
+					<div>
+						<i class="icon-qc"></i>空场
+					</div>
+					<div>
+						<i class="icon-book"></i>球友电话本
+					</div>
+					<div>
+						<i class="icon-more"></i>更多
+					</div>
+				</nav>
+				<div class="home-title">
+					报名表
+				</div>
+				<div class="bm-box bw">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;" class="pr">
+								<img class="mui-media-object mui-pull-left" src="images/index/icon-user.png">
+								<div class="mmui-media-body">
+									梅西<span class="index-tag">前锋</span>
+									<p class='mui-ellipsis'>巴萨罗纳足球队</p>
+								</div>
+							</a>
+							<div class="index-apply">
+								<a class="apply-box">
+									<img src="images/index/icon-common.png" />
+								</a>
+								<a class="apply-box">
+									<img src="images/index/icon-phone.png" />
+								</a>
+								<a class="apply-box">
+									<img src="images/index/icon-check.png" />
+								</a>
+							</div>
+						</li>
+					</ul>
+					<div class="home-text icon-time">明日12点</div>
+					<div class="home-text icon-vs">皇家马德里</div>
+					<div class="home-text icon-location">伯纳乌足球场</div>
+					<div class="cz">
+						<a>报名</a>
+						<a href="">请假</a>
+						<a href="">邀请</a>
+						<a class="fr" href="">查看大名单</a>
+					</div>
+				</div>
+				<div class="home-title">
+					精彩推荐
+				</div>
+				<div class="bw">
+					<div class="home-text icon-menu">一次搞懂xx</div>
+					<div class="home-text icon-fb ">皇马马德里
+						<span class="desc">xx球场</span>
+						<span class="time-r">2016-04-01</span>
+					</div>
+					<div class="home-text icon-f">
+						<img class="text-head" src="images/index/icon-user.png" />
+						<span class="vm">C罗</span>
+						<a href="" class="add-f">加为好友</a>
+					</div>
+					<div class="home-text icon-xx">今日天气很好来踢球</div>
+				</div>
+			</div>
+
+			<nav class="mui-bar mui-bar-tab foot-bar">
+				<a class="mui-tab-item mui-active">
+					<span class="mui-icon icon-b-home cur"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon icon-b-qd"></span>
+					<span class="mui-tab-label">球队</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon icon-b-qzq"></span>
+					<span class="mui-tab-label">足球圈</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon icon-b-sy"></span>
+					<span class="mui-tab-label">生涯</span>
+				</a>
+			</nav>
+		</div>
+
+	</body>
+	<script>
+		function pullfresh() {
+			//业务逻辑代码，比如通过ajax从服务器获取新数据；
+			//注意，加载完新数据后，必须执行如下代码，注意：若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
+			mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+		}
+		mui.init({
+			pullRefresh: {
+				container: "#refreshContainer", //下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+				down: {
+					contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+					contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+					contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+					callback: pullfresh // function //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+				}
+			}
+		});
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+
+</html>
