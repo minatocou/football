@@ -246,3 +246,72 @@ input[type=search] {
   margin: 0;
   padding: 0;
 }
+.at-view {
+  padding: 0 0.9375rem;
+}
+.at-view li {
+  padding: 0.5rem 0;
+  border-bottom: 0.0625rem #eee solid;
+  font-size: 0.875rem;
+}
+.at-view li label {
+  display: inline-block;
+  min-width: 4.375rem;
+}
+.view-box {
+  margin: 0.9375rem;
+  background: #f0f0f0;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+}
+.view-box p {
+  color: #4dbffe;
+}
+.view-box .gray {
+  color: #666666;
+}
+.view-box .mui-table-view {
+  background: transparent;
+}
+.user-box {
+  text-align: center;
+}
+.user-box li {
+  display: inline-block;
+  margin: 0.5rem;
+  color: #4dbffe;
+}
+.user-box li img {
+  height: 1.875rem;
+  width: 1.875rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+}
+.popover-title {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #333333;
+  background: #f0f0f0;
+}
+.mui-popover.bw {
+  background: #fff;
+}
+.popover-content {
+  margin: 1.25rem 0.625rem;
+  position: relative;
+}
+.popover-content.mui-col-2 {
+  column-gap: 1.25rem;
+  -webkit-column-gap: 1.25rem;
+}
+.popover-content.mui-col-2:before {
+  content: "";
+  display: block;
+  height: 100%;
+  border-right: 0.0625rem #8bdb6a solid;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}

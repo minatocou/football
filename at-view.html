@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/at.css" rel="stylesheet" />
+    
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">约球详情</h1>
+			<a class=" mui-icon-right-nav mui-pull-right head-right-text">我的赛事</a>
+		</header>
+	<div class="mui-content bar-b bw">
+		<ul class="at-view">
+			<li>
+				<label for="">结束时间：</label>
+				2016-01-01
+			</li>
+			<li>
+				<label for="">活动地点：</label>
+			</li>
+			<li>
+				<label for="">活动地址：</label>
+				奥体
+			</li>
+			<li>
+				<label for="">活动详情：</label>
+				测试
+			</li>
+		</ul>
+		<div class="view-box">
+			<p>浏览1次
+				<a href="#zb" class="fr gray"><span class="mui-icon mui-icon-compose"></span>战报</a>
+			</p>
+			<p>已有2人报名
+				<a href="#kq" class="fr gray"><span class="mui-icon mui-icon-compose"></span>考勤</a>
+			</p>
+			<ul class="user-box">
+				<li>
+					<img src="images/index/icon-user.png"/>
+					莫西华
+				</li>
+				<li>
+					<img src="images/index/icon-user.png"/>
+					doubi
+				</li>
+			</ul>
+		</div>
+		<div class="view-box">
+			<p>1条评论
+				<span class="fr gray"><span class="mui-icon mui-icon-compose"></span>写评论</span>
+			</p>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="images/index/icon-user.png">
+						<div class="mui-media-body">
+							<p class="blue">莫西华</p>
+							整
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<a href="" class="mui-btn mui-btn-green mui-btn-block add-btn">创建赛事</a>
+	
+	<div id="zb" class="mui-popover mui-popover-bottom mui-popover-action bw">
+	    <div class="popover-title">战报</div>
+	    <div align="center" class="mui-col-2 bw popover-content">
+	    	<div class="left">
+	    		<input type="text" name="" id="" value="" />
+		    	<input type="text" name="" id="" value="" />
+		    	<button class="mui-btn mui-btn-outlined">确认</button>
+	    	</div>
+	    	<div class="right">
+	    		<input type="text" name="" id="" value="" />
+		    	<input type="text" name="" id="" value="" />
+		    	<a href="#zb" class="mui-btn mui-btn-outlined">取消</a>
+	    	</div>
+	    </div>
+	</div>
+	<div id="kq" class="mui-popover mui-popover-bottom mui-popover-action bw">
+	    <div class="popover-title">出勤人员</div>
+	    <div align="center" class="bw popover-content">
+	    	<ul class="user-box">
+				<li>
+					<img src="images/index/icon-user.png"/>
+					<input name="checkbox1" type="checkbox" checked>
+					<label>莫西华</label>
+				</li>
+				<li>
+					<img src="images/index/icon-user.png"/>
+				    <input name="checkbox1" value="Item 1" type="checkbox">
+				    <label>莫西华</label>
+				</li>
+			</ul>
+			<div>
+				<button class="mui-btn mui-btn-outlined">确认</button>
+				<a href="#kq" class="mui-btn mui-btn-outlined">取消</a>
+			</div>
+	    </div>
+	</div>
+	<script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</body>
+</html>
