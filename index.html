@@ -32,7 +32,7 @@
 					<div>
 						<i class="icon-cp"></i>裁判
 					</div>
-					<div>
+					<a href="at.html">
 						<i class="icon-qd"></i>领队约球
 					</div>
 					<div>
@@ -44,7 +44,7 @@
 					<div>
 						<i class="icon-qc"></i>空场
 					</div>
-					<div>
+					<a href="book.html">
 						<i class="icon-book"></i>球友电话本
 					</div>
 					<div>
@@ -110,7 +110,7 @@
 					<span class="mui-icon icon-b-home cur"></span>
 					<span class="mui-tab-label">首页</span>
 				</a>
-				<a class="mui-tab-item">
+				<a href="team.html" class="mui-tab-item">
 					<span class="mui-icon icon-b-qd"></span>
 					<span class="mui-tab-label">球队</span>
 				</a>
@@ -118,7 +118,7 @@
 					<span class="mui-icon icon-b-qzq"></span>
 					<span class="mui-tab-label">足球圈</span>
 				</a>
-				<a class="mui-tab-item">
+				<a href="myhome.html" class="mui-tab-item">
 					<span class="mui-icon icon-b-sy"></span>
 					<span class="mui-tab-label">生涯</span>
 				</a>
@@ -126,23 +126,8 @@
 		</div>
 
 	</body>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	<script>
-		function pullfresh() {
-			//业务逻辑代码，比如通过ajax从服务器获取新数据；
-			//注意，加载完新数据后，必须执行如下代码，注意：若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
-			mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
-		}
-		mui.init({
-			pullRefresh: {
-				container: "#refreshContainer", //下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
-				down: {
-					contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
-					contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
-					contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
-					callback: pullfresh // function //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
-				}
-			}
-		});
 		var gallery = mui('.mui-slider');
 		gallery.slider({
 		  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；

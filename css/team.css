@@ -109,7 +109,7 @@ input[type=search] {
   background-size: auto 1.5rem;
 }
 .icon-b-qd.cur {
-  background-image: url("../images/index/icon-b-home-f.png");
+  background-image: url("../images/index/icon-b-qd-f.png");
 }
 .icon-b-qzq {
   background: url("../images/index/icon-b-qzq-o.png") no-repeat center;
@@ -175,6 +175,10 @@ input[type=search] {
 }
 .fr {
   float: right;
+}
+.head-right-text {
+  line-height: 2.75rem;
+  color: #fff;
 }
 .team-box .mui-table-view {
   background: none;
@@ -348,8 +352,8 @@ input[type=search] {
   background: url("../images/myhome/banner.jpg") no-repeat;
   background-size: cover;
   font-size: 0.875rem;
-  padding: 0.625rem;
   min-height: 9.375rem;
+  padding-top: 1.25rem;
 }
 .team-info .fs16 {
   font-size: 1rem;
@@ -365,15 +369,12 @@ input[type=search] {
 .team-info .head-img img {
   width: 100%;
 }
-.team-info .info {
-  padding: 0.3125rem 0;
+.team-info .team-banner {
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
-}
-.team-info .team {
   font-size: 0.75rem;
   min-height: 1.875rem;
   line-height: 1.875rem;
