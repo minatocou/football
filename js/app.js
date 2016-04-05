@@ -3,6 +3,9 @@ function pullfresh() {
 	//注意，加载完新数据后，必须执行如下代码，注意：若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
 	mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
 }
+var config={
+	aniShow:"slide-in-right"
+}
 mui.init({
 	swipeBack: true,
 	pullRefresh: {
@@ -38,7 +41,7 @@ mui('body').on('tap', 'a', function() {
 			url: this.href,
 			styles: webview_style,
 			show: {
-				aniShow: aniShow
+				aniShow: config.aniShow
 			},
 			waiting: {
 				autoShow: false
@@ -53,7 +56,7 @@ mui('body').on('tap', 'a', function() {
 					popGesture: 'close'
 				},
 				show: {
-					aniShow: aniShow
+					aniShow: config.aniShow
 				},
 				waiting: {
 					autoShow: false

@@ -98,32 +98,44 @@ input[type=search] {
   background: #f0f0f0;
 }
 .icon-b-home {
-  background: url(../images/index/icon-b-home-o.png) no-repeat center;
+  background: url("../images/index/icon-b-home-o.png") no-repeat center;
   background-size: auto 1.5rem;
 }
 .icon-b-home.cur {
-  background-image: url(../images/index/icon-b-home-f.png);
+  background-image: url("../images/index/icon-b-home-f.png");
 }
 .icon-b-qd {
-  background: url(../images/index/icon-b-qd-o.png) no-repeat center;
+  background: url("../images/index/icon-b-qd-o.png") no-repeat center;
   background-size: auto 1.5rem;
 }
 .icon-b-qd.cur {
-  background-image: url(../images/index/icon-b-home-f.png);
+  background-image: url("../images/index/icon-b-qd-f.png");
 }
 .icon-b-qzq {
-  background: url(../images/index/icon-b-qzq-o.png) no-repeat center;
+  background: url("../images/index/icon-b-qzq-o.png") no-repeat center;
   background-size: auto 1.5rem;
 }
 .icon-b-qzq.cur {
-  background-image: url(../images/index/icon-b-qzq-f.png);
+  background-image: url("../images/index/icon-b-qzq-f.png");
 }
 .icon-b-sy {
-  background: url(../images/index/icon-b-sy-o.png) no-repeat center;
+  background: url("../images/index/icon-b-sy-o.png") no-repeat center;
   background-size: auto 1.5rem;
 }
 .icon-b-sy.cur {
-  background-image: url(../images/index/icon-b-sy-f.png);
+  background-image: url("../images/index/icon-b-sy-f.png");
+}
+.icon-time {
+  background: url("../images/index/icon-time.png") no-repeat 0.75rem center #fff;
+  background-size: 1.125rem auto;
+}
+.icon-vs {
+  background: url("../images/index/icon-vs.png") no-repeat 0.625rem center #fff;
+  background-size: 1.25rem auto;
+}
+.icon-location {
+  background: url("../images/index/icon-location.png") no-repeat 0.75rem center #fff;
+  background-size: 1rem auto;
 }
 .ml5 {
   margin-left: 0.3125rem;
@@ -160,6 +172,13 @@ input[type=search] {
   -webkit-column-count: 2;
   column-gap: 0;
   -webkit-column-gap: 0;
+}
+.fr {
+  float: right;
+}
+.head-right-text {
+  line-height: 2.75rem;
+  color: #fff;
 }
 .icon-book {
   background: url(../images/index/icon-book.png) no-repeat center;
@@ -240,7 +259,8 @@ input[type=search] {
   font-size: 0;
   background: #fff;
 }
-.home-menu > div {
+.home-menu > div,
+.home-menu > a {
   padding: 0.5rem;
   font-size: 0.875rem;
   width: 25%;
