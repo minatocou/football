@@ -5,7 +5,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
-		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link href="css/at.css" rel="stylesheet" />
 	</head>
@@ -25,11 +24,12 @@
 					</div>
 					<div class="mui-input-row">
 						<label class="b">开始时间</label>
-						<input type="text" placeholder="请输入开始时间">
+						
+						<input type="datetime-local" placeholder="请输入开始时间">
 					</div>
 					<div class="mui-input-row">
 						<label>结束时间</label>
-						<input type="text" placeholder="请输入结束时间">
+						<input type="datetime-local" placeholder="请输入结束时间">
 					</div>
 					<div class="mui-input-row">
 						<label class="b">活动地点</label>
@@ -50,13 +50,15 @@
 					  <input name="checkbox1" value="Item 1" type="checkbox">
 					</div>
 					<div class="p15">
-						<a type="button" href="moments.html" class="mui-btn mui-btn-green sub-btn">下一步</a>
+						<a  href="moments.html" class="mui-btn mui-btn-green sub-btn">下一步</a>
 					</div>
 					
 				</div>
 			</form>
 
 		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js"></script>
 		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
