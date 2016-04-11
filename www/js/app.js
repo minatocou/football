@@ -4,7 +4,7 @@ function pullfresh() {
 	mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
 }
 var config={
-	aniShow:"slide-in-right"
+	aniShow:"none"
 }
 mui.init({
 	swipeBack: true,
@@ -41,7 +41,8 @@ mui('body').on('tap', 'a', function() {
 			url: this.href,
 			styles: webview_style,
 			show: {
-				aniShow: config.aniShow
+				aniShow: config.aniShow,
+				duration:0
 			},
 			waiting: {
 				autoShow: false
@@ -56,7 +57,8 @@ mui('body').on('tap', 'a', function() {
 					popGesture: 'close'
 				},
 				show: {
-					aniShow: config.aniShow
+					aniShow: config.aniShow，
+					duration:0
 				},
 				waiting: {
 					autoShow: false

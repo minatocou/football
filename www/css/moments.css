@@ -24,7 +24,6 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #666666;
 }
 .bw {
   background: #fff;
@@ -180,4 +179,68 @@ input[type=search] {
 .head-right-text {
   line-height: 2.75rem;
   color: #fff;
+}
+.moment-box,
+.person-list {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  margin: 0.625rem;
+}
+.person-list {
+  padding: 0.3125rem;
+  font-size: 0.75rem;
+  color: #666666;
+}
+.person-list .title {
+  text-align: center;
+  padding-bottom: 0.3125rem;
+  border-bottom: 0.0625rem #eee solid;
+}
+.person-list .per {
+  padding: 0.3125rem;
+}
+.person-list .per .img-box {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0.3125rem;
+  overflow: hidden;
+}
+.person-list .per .img-box img {
+  display: block;
+  width: 100%;
+}
+.btn-fb {
+  margin: 0.625rem;
+}
+.btn-fb .mui-btn {
+  padding: 0.625rem 0;
+  margin: 0;
+}
+footer.btn-fb {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.city {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: #666666;
+  border-bottom: 0.0625rem #cccccc solid;
+}
+.city span {
+  display: inline-block;
+  padding: 0.1875rem 0.3125rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem #fff solid;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.city span.cur {
+  border: 0.0625rem #8bdb6a solid;
+  color: #8bdb6a;
 }
