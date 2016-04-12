@@ -57,7 +57,7 @@ mui('body').on('tap', 'a', function() {
 					popGesture: 'close'
 				},
 				show: {
-					aniShow: config.aniShow，
+					aniShow: config.aniShow,
 					duration:0
 				},
 				waiting: {

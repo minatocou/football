@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixin";
+@import "base"; 
+.moment-box,.person-list{
+    background: @w;
+    display: block;
+    padding: 20*@xem;
+    border-radius: 8*@xem;
+    background: @w;
+    margin: 10*@xem;
+}
+.person-list{
+    padding: 5*@xem;
+    font-size: 12*@xem;
+    color: @cc;
+    .title{
+        text-align: center;
+        padding-bottom: 5*@xem;
+        border-bottom: 1*@xem #eee solid;
+    }
+    .per{
+        padding: 5*@xem;
+        .img-box{
+            width: 35*@xem;
+            height: 35*@xem;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 5*@xem;
+            overflow: hidden;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+.btn-fb{
+    margin: 10*@xem;
+    .mui-btn{
+        padding: 10*@xem 0;
+        margin: 0;
+    }
+}
+footer.btn-fb{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.city{
+    padding: 8*@xem;
+    font-size: 12*@xem;
+    color: @cc;
+    border-bottom: 1*@xem #cccccc solid;
+    span{
+        display: inline-block;
+        padding: 3*@xem 5*@xem;
+        border-radius: 4*@xem;
+        border: 1*@xem @w solid;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        &.cur{
+            border: 1*@xem @green solid;
+            color: @green;
+        }
+    }
+    
+}

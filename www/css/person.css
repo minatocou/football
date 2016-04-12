@@ -181,150 +181,67 @@ input[type=search] {
   line-height: 2.75rem;
   color: #fff;
 }
-.bar-moment {
-  margin: 0.5rem auto;
+.moment-box,
+.person-list {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  margin: 0.625rem;
+}
+.person-list {
+  padding: 0.3125rem;
+  font-size: 0.75rem;
+  color: #666666;
+}
+.person-list .title {
   text-align: center;
-  width: 7.5rem;
-  border: 0.0625rem #fff solid;
-  border-radius: 0.375rem;
+  padding-bottom: 0.3125rem;
+  border-bottom: 0.0625rem #eee solid;
+}
+.person-list .per {
+  padding: 0.3125rem;
+}
+.person-list .per .img-box {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0.3125rem;
   overflow: hidden;
-  font-size: 0.875rem;
-  display: inline-block;
-  right: 40px;
-  left: 40px;
-  position: absolute;
 }
-.bar-moment a {
-  color: #fff;
-  width: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  height: 1.75rem;
-  line-height: 1.75rem;
+.person-list .per .img-box img {
+  display: block;
+  width: 100%;
 }
-.bar-moment a.cur {
-  background: #fff;
-  color: #8bdb6a;
+.btn-fb {
+  margin: 0.625rem;
 }
-.moment-box {
-  position: relative;
-}
-.moment-box li {
-  background: #fff;
-  margin-bottom: 0.625rem;
-}
-.moment-box .m-btns {
-  position: absolute;
-  right: 0.9375rem;
-  top: 50%;
-  margin-top: -0.9375rem;
-}
-.moment-box .m-btns .mui-btn {
-  position: static;
-}
-.moment-box .content {
-  position: relative;
-  padding: 0.625rem;
-  font-size: 0.875rem;
-  min-height: 5rem;
-}
-.moment-box .content .info {
-  position: absolute;
-  right: 1.875rem;
-  bottom: 0.625rem;
-  font-size: 0.75rem;
-  color: #ccc;
-}
-.moment-box .content .info span {
-  margin-left: 0.625rem;
-}
-.moment-box .content .m-view {
-  position: absolute;
-  right: 0.625rem;
-  top: 0.625rem;
-  color: #8bdb6a;
-}
-.moment-box .btn-list {
-  padding: 0.625rem;
-  border-top: 0.0625rem #eee solid;
-  font-size: 0.875rem;
-}
-.moment-box .btn-list .mui-icon {
-  font-size: 1.25rem;
-  color: #8bdb6a;
-}
-.moment-box .commons {
-  border-top: 0.0625rem #eee solid;
-  padding: 0.3125rem 0.625rem;
-  font-size: 0.875rem;
-}
-.team-a {
+.btn-fb .mui-btn {
   padding: 0.625rem 0;
+  margin: 0;
 }
-.team-a img {
-  width: 4.375rem;
-  display: block;
-}
-.gg {
-  font-size: 0.75rem;
-  color: #CCCCCC;
-}
-.add-box {
-  padding: 0.625rem;
-}
-.add-box textarea {
-  background: #eee;
-  padding: 0.625rem;
-  width: 100%;
-  min-height: 6.25rem;
-  border: none;
-}
-.upload-box .uimg-box {
-  display: inline-block;
-  vertical-align: top;
-}
-.upload-box .uimg-box .preDiv {
-  display: inline-flex;
-  display: -webkit-inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 5.625rem;
-  height: 5.625rem;
-  margin-bottom: 0.625rem;
-}
-.upload-box .uimg-box .preDiv img {
-  max-width: 5.625rem;
-}
-.upload-box .upload-btn {
-  display: inline-block;
-  vertical-align: top;
-  height: 5.625rem;
-  width: 5.625rem;
-  border: 0.1875rem #ccc dotted;
-  position: relative;
-  overflow: hidden;
-  font-size: 0.75rem;
-  color: #8bdb6a;
-}
-.upload-box .upload-btn .mui-icon {
-  font-size: 3.75rem;
-  display: block;
-}
-.upload-box .upload-btn input {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-.bottom-footer {
+footer.btn-fb {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.625rem;
+}
+.city {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: #666666;
+  border-bottom: 0.0625rem #cccccc solid;
+}
+.city span {
+  display: inline-block;
+  padding: 0.1875rem 0.3125rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem #fff solid;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.city span.cur {
+  border: 0.0625rem #8bdb6a solid;
+  color: #8bdb6a;
 }

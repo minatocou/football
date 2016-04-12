@@ -1,6 +1,6 @@
 var upload = {
 	maxImg:9,
-	maxHeight:100,
+	maxHeight:90,
 	render: function(src) {
 		var $this = this;
 		lrz(src, {
