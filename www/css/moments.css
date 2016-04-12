@@ -292,6 +292,7 @@ input[type=search] {
   width: 5.625rem;
   height: 5.625rem;
   margin-bottom: 0.625rem;
+  margin-right: 0.625rem;
 }
 .upload-box .uimg-box .preDiv img {
   max-width: 5.625rem;
