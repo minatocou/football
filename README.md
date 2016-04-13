@@ -2,25 +2,25 @@
 
 基于<a href="http://www.dcloud.io/">dcloud</a>开发 UI库<a href="https://github.com/dcloudio/mui">mui</a>
 
-#名词解释
+##名词解释
 *dcloud：前端框架 <br/>
 *HTML5+：封装原生一些api <br/>
 *Native.js：封装js中操作oc的操作 <br/>
 *MUI：ui库，对HTML5+进行深度封装。 <br/>
 
-#使用方式
+##使用方式
 1.安装<a href="https://nodejs.org/en/">nodejs</a>     <br/>
 2.安装less  cmd -> $npm i -g less <br/>
 3.安装ide，工具->预编译设置->选中less->编辑->智能完成 <br/>
 4.文件->打开目录，选择项目源文件目录 <br/>
 
 
-#注意事项
+##注意事项
 *less文件中*@xem为适配各个屏幕尺寸，例   20px==20*@xem
 
 
 
-###目录结构
+##目录结构
  ├── HBuilder-hello   // 项目主目录<br/>
         │    ├── static<br/>
         ├── Pandora/apps/H59620898(ID)                      // 前端项目目录 <br/>
