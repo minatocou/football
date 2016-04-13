@@ -4,7 +4,7 @@
 
 
 
-
+###目录结构
  ├── HBuilder-hello   // 项目主目录
         │    ├── static
         │    └──
