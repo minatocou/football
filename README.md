@@ -7,7 +7,7 @@
 *HTML5+：封装原生一些api <br/>
 *Native.js：封装js中操作oc的操作 <br/>
 *MUI：ui库，对HTML5+进行深度封装。 <br/>
-
+*H59620898 为manufest.json中id，具体请参考<a href="http://ask.dcloud.net.cn/article/41">IOS配置</a>
 ##使用方式
 1.安装<a href="https://nodejs.org/en/">nodejs</a>     <br/>
 2.安装less  cmd -> $npm i -g less <br/>
@@ -22,21 +22,20 @@
 
 ##目录结构
  ├── HBuilder-hello   // 项目主目录<br/>
-        │    ├── static<br/>
-        ├── Pandora/apps/H59620898(ID)                      // 前端项目目录 <br/>
-        │    ├── js                                         // js部署目录<br/>
-        │    │       └── app.js //全局js处理        <br/>
-        │    │       └── lrz.all.bundle.js //本地预览、上传依赖包 <br/>
-        │    │       └── mui.js //mui库<br/>
-        │    │       └── mui.picker.min.js //mui日期选择依赖库<br/>
-        │    │       └── upload.js //单文件上传以及多文件上传实现<br/>
-        │    ├──  css// css部署目录<br/>
-        │    │       └── (根据html文件命名)             <br/>
-        │    ├──  img // image部署目录<br/>
-        │    │       └── app             <br/>
-        │    ├──  fonts //字体文件<br/>
-        │    │               <br/>
-        │    └──  manufest.json //项目配置文件 配置规范参考(<a href="http://ask.dcloud.net.cn/article/41">IOS配置</a>)<br/>
+   ├── Pandora/apps/H59620898                      // 前端项目目录 <br/>
+   │    ├── js                                         // js部署目录<br/>
+   │    │       └── app.js //全局js处理        <br/>
+   │    │       └── lrz.all.bundle.js //本地预览、上传依赖包 <br/>
+   │    │       └── mui.js //mui库<br/>
+   │    │       └── mui.picker.min.js //mui日期选择依赖库<br/>
+   │    │       └── upload.js //单文件上传以及多文件上传实现<br/>
+   │    ├──  css// css部署目录<br/>
+   │    │       └── (根据html文件命名)             <br/>
+   │    ├──  img // image部署目录<br/>
+   │    │       └── app             <br/>
+   │    ├──  fonts //字体文件<br/>
+   │    │               <br/>
+   │    └──  manufest.json //项目配置文件 配置规范参考(<a href="http://ask.dcloud.net.cn/article/41">IOS配置</a>)<br/>
 
 推荐使用IDE
 <a href="http://download.dcloud.net.cn/HBuilder.7.0.0.windows.zip">win</a> 
